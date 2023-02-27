@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML, CSS e JavaScript
 - Git e Github
 - Figma
-- ReactJS com as biblotecas:
+- `ReactJS` com as biblotecas:
 
   - [Vite](https://vitejs.dev/)
   - [TypeScript](https://www.typescriptlang.org/)
