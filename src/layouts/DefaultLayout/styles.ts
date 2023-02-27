@@ -12,7 +12,7 @@ export const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
     overflow-x: hidden;
     height: calc(100vh - 6rem);
     margin: 3rem auto;

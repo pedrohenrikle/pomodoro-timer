@@ -64,7 +64,7 @@ export const HistoryList = styled.main`
     }
   }
 
-  @media (max-width: 200px) {
+  @media (max-width: 550px) {
     tr {
       height: 20px;
     }
