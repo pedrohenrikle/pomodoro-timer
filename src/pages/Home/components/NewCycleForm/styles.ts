@@ -11,7 +11,7 @@ export const FormContainer = styled.div`
   font-weight: bold;
   flex-wrap: wrap;
 
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
     font-size: 1rem;
     margin-top: 2rem;
   }
@@ -36,7 +36,7 @@ const BaseInput = styled.input`
     color: ${(props) => props.theme['gray-500']};
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
     font-size: 1rem;
   }
 `

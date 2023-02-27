@@ -15,7 +15,7 @@ export const CountdownContainer = styled.div`
     border-radius: 8px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
     overflow-x: hidden;
     font-size: 4rem;
     line-height: 6rem;
@@ -40,7 +40,7 @@ export const Separator = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 400px) {
+  @media (max-width: 550px) {
     font-size: 5rem;
     line-height: 4rem;
     width: 1rem;
