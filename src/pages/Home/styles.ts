@@ -29,7 +29,7 @@ export const BaseCountdownButton = styled.button`
   gap: 0.5rem;
   font-weight: bold;
 
-  color: ${(props) => props.theme['gray-100']};
+  color: ${(props) => props.theme['button-color']};
 
   cursor: pointer;
 

@@ -1,17 +1,24 @@
 import { ThemeProvider } from 'styled-components'
 import { BrowserRouter } from 'react-router-dom'
 
-import { defaultTheme } from './styles/themes/default'
+import { defaultTheme, lightTheme } from './styles/themes/default'
 import { GlobalStyle } from './styles/global'
 import { Router } from './Router'
 import { CyclesContextProvider } from './contexts/CyclesContext'
+import { useState } from 'react'
 
 export function App() {
+  const [theme, setTheme] = useState('defaultTheme')
+
+  const themeToggler = () => {
+    theme === 'defaultTheme' ? setTheme('lightTheme') : setTheme('defaultTheme')
+  }
+
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme === 'defaultTheme' ? defaultTheme : lightTheme}>
       <BrowserRouter>
         <CyclesContextProvider>
-          <Router />
+          <Router atThemeToggler={themeToggler} />
         </CyclesContextProvider>
       </BrowserRouter>
       <GlobalStyle />

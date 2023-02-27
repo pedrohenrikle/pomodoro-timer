@@ -2,10 +2,10 @@ import { Outlet } from 'react-router-dom'
 import { Header } from '../../components/Header'
 import { LayoutContainer } from './styles'
 
-export function DefaultLayout() {
+export function DefaultLayout({ asThemeToggler }: any) {
   return (
     <LayoutContainer>
-      <Header />
+      <Header asThemeToggler={asThemeToggler} />
       <Outlet />
     </LayoutContainer>
   )

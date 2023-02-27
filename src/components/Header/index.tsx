@@ -1,13 +1,18 @@
 import { HeaderContainer } from './style'
 
 import logoIgnite from '../../assets/logo-ignite.svg'
-import { Scroll, Timer } from 'phosphor-react'
+import { Moon, Scroll, Timer } from 'phosphor-react'
 import { NavLink } from 'react-router-dom'
 
-export function Header() {
+export function Header({ asThemeToggler }: any) {
   return (
     <HeaderContainer>
-      <img src={logoIgnite} alt="" />
+      <div>
+        <img src={logoIgnite} alt="" />
+        <a onClick={asThemeToggler}>
+          <Moon size={24} />
+        </a>
+      </div>
       <nav>
         <NavLink to="/" title="Timer">
           <Timer size={24} />
