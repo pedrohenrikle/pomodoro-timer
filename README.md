@@ -48,7 +48,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Ignite Timer é uma aplicação com o foco em ajudar as pessoas a controlar o tempo durante o método pomodoro de gerenciamento de tempo e produtividade 💡.
 
-- [Visite o projeto online](https://github.com/pedrohenrikle/pomodoro-timer)
+- [Visite o projeto online](https://pomodoro-timer-two-sooty.vercel.app/)
 
 ## 🔖 Layout
 
