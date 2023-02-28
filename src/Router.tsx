@@ -3,12 +3,17 @@ import { DefaultLayout } from './layouts/DefaultLayout'
 import { History } from './pages/History'
 import { Home } from './pages/Home'
 
-export function Router({ atThemeToggler }: any) {
+export function Router({ atThemeToggler, currentTheme }: any) {
   return (
     <Routes>
       <Route
         path="/"
-        element={<DefaultLayout asThemeToggler={atThemeToggler} />}
+        element={
+          <DefaultLayout
+            asThemeToggler={atThemeToggler}
+            asCurrentTheme={currentTheme}
+          />
+        }
       >
         <Route path="/" element={<Home />} />
         <Route path="/history" element={<History />} />

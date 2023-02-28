@@ -1,16 +1,16 @@
 import { HeaderContainer } from './style'
 
 import logoIgnite from '../../assets/logo-ignite.svg'
-import { Moon, Scroll, Timer } from 'phosphor-react'
+import { Moon, Scroll, Sun, Timer } from 'phosphor-react'
 import { NavLink } from 'react-router-dom'
 
-export function Header({ asThemeToggler }: any) {
+export function Header({ asThemeToggler, asCurrentTheme }: any) {
   return (
     <HeaderContainer>
       <div>
         <img src={logoIgnite} alt="" />
         <a onClick={asThemeToggler}>
-          <Moon size={24} />
+          {asCurrentTheme ? <Sun size={24} /> : <Moon size={24} />}
         </a>
       </div>
       <nav>

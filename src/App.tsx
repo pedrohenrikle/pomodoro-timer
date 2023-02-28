@@ -18,7 +18,10 @@ export function App() {
     <ThemeProvider theme={theme === 'defaultTheme' ? defaultTheme : lightTheme}>
       <BrowserRouter>
         <CyclesContextProvider>
-          <Router atThemeToggler={themeToggler} />
+          <Router
+            atThemeToggler={themeToggler}
+            currentTheme={theme === 'defaultTheme'}
+          />
         </CyclesContextProvider>
       </BrowserRouter>
       <GlobalStyle />
